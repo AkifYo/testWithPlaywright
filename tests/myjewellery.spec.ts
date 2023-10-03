@@ -9,7 +9,7 @@ test('subscription test', async ({ page }) => {
   await page.getByLabel('Inschrijven').click();
   await page.getByText('Done. You\'ve subscribed').click();
   await expect(page.getByText('Done. You\'ve subscribed')).toContainText("Done")
-  //await page.waitForTimeout(2);
+  await page.waitForTimeout(2);
 
   await page.close();
 });
