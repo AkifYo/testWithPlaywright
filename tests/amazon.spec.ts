@@ -12,5 +12,6 @@ test('test', async ({ page }) => {
   await page.getByRole('link', { name: 'SAMSUNG Galaxy Buds2 True Wireless Earbuds Noise Cancelling Ambient Sound Bluetooth Lightweight Comfort Fit Touch Control,...' }).click();
   await page.goto('https://www.amazon.com/Wireless-Cancelling-Bluetooth-Lightweight-International/dp/B09CKF166Y/ref=sr_1_3?crid=3NPTZAH624ZSX&keywords=samsung&qid=1696446651&refinements=p_89%3ASAMSUNG%2Cp_36%3A-50000&rnid=2491154011&s=wireless&sprefix=samsung%2Caps%2C279&sr=1-3&th=1');
   await page.getByLabel('Amazon', { exact: true }).click();
+  //wait
   await page.close;
 });
